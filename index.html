@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>University Student Information Portal</title>
+
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- External JavaScript File -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- QUESTION ONE: HEADER SECTION -->
+    <header id="home">
+
+        <h1>ANKO TOM (DOFIDO) UNIVERSITY</h1>
+
+        <h2>Student Information Portal</h2>
+
+        <p>
+            Welcome to Anko Tom University Student
+            Information System.
+        </p>
+
+    </header>
+
+
+    <!-- QUESTION ONE: NAVIGATION MENU -->
+    <nav>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#registration">
+                Student Registration
+            </a></li>
+
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+
+    </nav>
+
+
+    <main>
+
+        <!-- QUESTION TWO (a): ABOUT SECTION -->
+        <section id="about">
+
+            <h2>About Anko Tom University</h2>
+
+            <p>
+                Anko Tom University Student Information
+                Portal is designed to help students access
+                important university information, view
+                academic programmes and manage student
+                registration details easily and efficiently.
+            </p>
+
+
+            <!-- QUESTION TWO (b): ACADEMIC PROGRAMMES -->
+            <h3>Academic Programmes Offered</h3>
+
+            <ul>
+                <li>Bachelor of Computer Science</li>
+
+                <li>Bachelor of Business Administration</li>
+
+                <li>Bachelor of Education</li>
+
+                <li>Bachelor of Information Technology</li>
+            </ul>
+
+        </section>
+
+
+        <!-- QUESTION TWO (c): STUDENT INFORMATION TABLE -->
+        <section id="students">
+
+            <h2>Student Information</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+
+                        <th>Student Name</th>
+
+                        <th>Registration Number</th>
+
+                        <th>Programme</th>
+
+                        <th>Year of Study</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>001</td>
+
+                        <td>John Mwangi</td>
+
+                        <td>COM/B/01-001</td>
+
+                        <td>Computer Science</td>
+
+                        <td>Year 1</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>002</td>
+
+                        <td>Mary Wanjiku</td>
+
+                        <td>BUS/B/01-002</td>
+
+                        <td>Business Administration</td>
+
+                        <td>Year 2</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>003</td>
+
+                        <td>Peter Kiptoo</td>
+
+                        <td>EDU/B/01-003</td>
+
+                        <td>Education</td>
+
+                        <td>Year 3</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- QUESTION THREE: STUDENT REGISTRATION FORM -->
+        <section id="registration">
+
+            <h2>Student Registration Form</h2>
+
+            <form id="registrationForm">
+
+
+                <!-- (a) STUDENT FULL NAME -->
+                <label for="fullname">
+                    Student Full Name:
+                </label>
+
+                <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+
+                <!-- (b) REGISTRATION NUMBER -->
+                <label for="regno">
+                    Registration Number:
+                </label>
+
+                <input
+                    type="text"
+                    id="regno"
+                    name="regno"
+                    placeholder="Enter your registration number"
+                    required
+                >
+
+
+                <!-- (c) EMAIL ADDRESS -->
+                <label for="email">
+                    Email Address:
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required
+                >
+
+
+                <!-- (d) GENDER RADIO BUTTONS -->
+                <label>Gender:</label>
+
+                <div class="gender-options">
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="Male"
+                            required
+                        >
+                        Male
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="Female"
+                        >
+                        Female
+                    </label>
+
+                </div>
+
+
+                <!-- (e) ACADEMIC PROGRAMME DROPDOWN -->
+                <label for="programme">
+                    Academic Programme:
+                </label>
+
+                <select
+                    id="programme"
+                    name="programme"
+                    required
+                >
+
+                    <option value="">
+                        Select Academic Programme
+                    </option>
+
+                    <option value="Computer Science">
+                        Bachelor of Computer Science
+                    </option>
+
+                    <option value="Business Administration">
+                        Bachelor of Business Administration
+                    </option>
+
+                    <option value="Education">
+                        Bachelor of Education
+                    </option>
+
+                    <option value="Information Technology">
+                        Bachelor of Information Technology
+                    </option>
+
+                </select>
+
+
+                <!-- (f) SUBMIT AND RESET BUTTONS -->
+                <div class="buttons">
+
+                    <button type="submit">
+                        Submit Registration
+                    </button>
+
+                    <button type="reset">
+                        Reset
+                    </button>
+
+                </div>
+
+            </form>
+
+
+            <!-- QUESTION SIX: DISPLAY REGISTERED DETAILS -->
+            <div id="result"></div>
+
+            <p id="successMessage"></p>
+
+        </section>
+
+    </main>
+
+
+    <!-- CONTACT SECTION -->
+    <footer id="contact">
+
+        <h2>Contact Anko Tom University</h2>
+
+        <p>Email: info@ankotom.ac.ke</p>
+
+        <p>
+            &copy; 2026 Anko Tom University.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
